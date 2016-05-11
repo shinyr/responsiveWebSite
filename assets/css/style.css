@@ -34,7 +34,6 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
   content: none; }
 
 table {
@@ -46,5 +45,36 @@ body {
 
 .main {
   width: 100%; }
+
+header {
+  height: 75px;
+  position: fixed;
+  top: 0;
+  background-image: url("../images/header-right.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 268px;
+  background-color: #2B3C43;
+  width: 100%; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #2B3C43;
+  width: 100%; }
+  footer .footer-left, footer .footer-right {
+    display: inline-block;
+    width: 49%;
+    height: 50px;
+    background-repeat: no-repeat; }
+  footer .footer-left {
+    background-image: url("../images/footer-left.png");
+    background-position: left;
+    background-size: contain; }
+  footer .footer-right {
+    background-image: url("../images/footer-right.png");
+    background-position: right;
+    float: right;
+    background-size: 49%; }
 
 /*# sourceMappingURL=style.css.map */
