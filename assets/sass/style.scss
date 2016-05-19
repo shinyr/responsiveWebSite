@@ -1,4 +1,5 @@
 @import 'reset';
+$border-right: #FFFFFF;
 html {
   height: 100%;
 }
@@ -16,7 +17,7 @@ header {
   height: 75px;
   position: fixed;
   top: 0;
-  background-image: #2B3C43 url("../images/header-right.png") no-repeat right;
+  background: #2B3C43 url("../images/header-right.png") no-repeat right;
   background-size: 268px;
   width: 100%;
   span {
@@ -37,12 +38,12 @@ footer {
     height: 50px;
   }
   .footer-left {
-    background-image: url("../images/footer-left.png") no-repeat left;
+    background: url("../images/footer-left.png") no-repeat left;
     width: 20%;
     background-size: 25%;
   }
   .footer-right {
-    background-image: url("../images/footer-right.png") no-repeat right;
+    background: url("../images/footer-right.png") no-repeat right;
     float: right;
     background-size: contain;
     width: 33%;
@@ -57,7 +58,7 @@ footer {
       height: 30px;
       li {
         display: inline;
-        border-right: 0.8px solid #FFFFFF;
+        border-right: 0.8px solid $border-right;
         padding: 5px 10px;
         height: 50px;
         a {
