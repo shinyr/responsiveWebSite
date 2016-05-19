@@ -1,25 +1,32 @@
 @import 'reset';
+html {
+  height: 100%;
+}
 body {
   margin: 0;
+  height: 100%;
+  width: 100%;
 }
 .main {
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-header{
+header {
   height: 75px;
-	position: fixed;
-	top: 0;
-	background-image: url("../images/header-right.png");
+  position: fixed;
+  top: 0;
+  background-image: url("../images/header-right.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 268px;
   background-color: #2B3C43;
-	width: 100%;
-  span{
-    color: white;
-    position: absolute;
-    top: 25px;
-    left: 547px;;
+  width: 100%;
+  span {
+    color: #D1D3D5;
+    position: relative;
+    top: 30%;
+    left: 45%;
   }
 }
 footer {
@@ -27,7 +34,9 @@ footer {
   bottom: 0;
   background-color: #2B3C43;
   width: 100%;
+  height: 50px;
   .footer-left, .footer-right {
+    background-size: contain;
     display: inline-block;
     height: 50px;
     background-repeat: no-repeat;
@@ -35,28 +44,63 @@ footer {
   .footer-left {
     background-image: url("../images/footer-left.png");
     background-position: left;
-    background-size: contain;
-    width: 51%;
+    width: 20%;
   }
   .footer-right {
     background-image: url("../images/footer-right.png");
     background-position: right;
     float: right;
-    background-size: 49%;
-    width: 49%;
-
+    width: 33%;
+  }
+  .footer_mid {
+    display: inline-block;
+    ul {
+      padding: 0;
+      font-size: 10px;
+      margin: 0;
+      overflow: hidden;
+      height: 30px;
+      li {
+        display: inline;
+        border-right: 0.8px solid white;
+        padding: 5px 10px;
+        height: 50px;
+        a {
+          color: #D1D3D5;
+          text-decoration: none;
+          padding: 10px 20px;
+        }
+        a.active {
+          color: #9E9E9E;
+        }
+      }
+      li:last-child {
+        border-right: none;
+      }
+    }
   }
 }
-#footer_list {
-  ul{
-    padding: 0;
-    li{
-      display: inline;
-      a{
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
-      }
+.container {
+  height: 100%;
+  background: url("../images/sky.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
+  .home-msg {
+    text-align: center;
+    line-height: 30px;
+    font-size: 22px;
+    font-family: sans-serif;
+    height: 5em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    .line1,
+    .line2,
+    .line3 {
+      color: #2B3C43;
     }
   }
 }
