@@ -1,5 +1,5 @@
 @import 'reset';
-$border-right: #FFFFFF;
+$color: #FFF;
 html {
   height: 100%;
 }
@@ -20,11 +20,13 @@ header {
   background: #2B3C43 url("../images/header-right.png") no-repeat right;
   background-size: 268px;
   width: 100%;
-  span {
-    color: #D1D3D5;
-    position: relative;
-    top: 30%;
-    left: 45%;
+  .title {
+    color: $color;
+    font-size: 25px;
+    font-family: sans;
+    text-align: center;
+    top: 10%;
+    padding: 20px;
   }
 }
 footer {
@@ -52,22 +54,22 @@ footer {
     display: inline-block;
     ul {
       padding: 0;
-      font-size: 10px;
+      font-size: 13px;
       margin: 0;
       overflow: hidden;
       height: 30px;
       li {
         display: inline;
-        border-right: 0.8px solid $border-right;
+        border-right: 0.8px solid $color;
         padding: 5px 10px;
         height: 50px;
         a {
-          color: #D1D3D5;
+          color: $color;
           text-decoration: none;
           padding: 10px 20px;
         }
         a.active {
-          color: #9E9E9E;
+          text-decoration: underline;
         }
       }
       li:last-child {
@@ -83,18 +85,14 @@ footer {
   .home-msg {
     text-align: center;
     line-height: 30px;
-    font-size: 22px;
-    font-family: sans-serif;
+    font-size: 25px;
+    font-family: sans;
     height: 5em;
     position: relative;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    .line1,
-    .line2,
-    .line3 {
-      color: #2B3C43;
-    }
+    color: #2B3C43;
   }
 }
