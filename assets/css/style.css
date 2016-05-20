@@ -96,7 +96,7 @@ footer {
       height: 30px; }
       footer .footer-mid ul li {
         display: inline;
-        border-right: 0.8px solid #FFF;
+        border-right: 1px solid #FFF;
         padding: 5px 10px;
         height: 50px; }
         footer .footer-mid ul li:last-child {
